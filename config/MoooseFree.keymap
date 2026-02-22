@@ -266,18 +266,18 @@
 
         FUNCTION {
             bindings = <
-&none           &none                   &kp F1                   &kp F2           &kp F3            &kp F4        &kp K_PASTE
-&none           &none                   &kp F5                   &kp F6           &kp F7            &kp F8        &kp K_CUT
-&none           &none                   &kp F9                   &kp F10          &kp F11           &kp F12       &none        &kp K_REDO
-&none           &none                   &none                    &none            &kp LEFT_CONTROL  &kp LEFT_ALT  &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp SPACE        &kp K_COPY
-&bootloader     &none                   &none                    &none            &none             &none         &none        &bt BT_CLR
-&kp UP          &kp COLON               &kp N1                   &kp N2           &kp N3            &kp COMMA     &none
-&kp DOWN        &kp SEMI                &kp N4                   &kp N5           &kp N6            &kp DOT       &none
-&kp RIGHT       &mkp LCLK               &kp PRCNT                &kp N7           &kp N8            &kp N9        &kp N0       &none
-&kp LEFT        &mkp RCLK               &kp RIGHT_GUI            &none            &none             &none         &none
-&kp ENTER       &kp ENTER               &lt_to_layer_0 2 ESCAPE  &lt 1 LANG1      &kp RIGHT_SHIFT
-&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP  &kp PRINTSCREEN   &kp RG(L)     &none        &none
+&none           &none                   &kp F1                   &kp F2            &kp F3           &kp F4        &kp K_PASTE
+&none           &none                   &kp F5                   &kp F6            &kp F7           &kp F8        &kp K_CUT
+&none           &none                   &kp F9                   &kp F10           &kp F11          &kp F12       &none        &kp K_REDO
+&none           &none                   &none                    &none             &kp SPACE        &kp LEFT_ALT  &kp K_UNDO
+&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp LEFT_CONTROL  &kp K_COPY
+&bootloader     &none                   &none                    &none             &none            &none         &none        &bt BT_CLR
+&kp UP          &kp COLON               &kp N1                   &kp N2            &kp N3           &kp COMMA     &none
+&kp DOWN        &kp SEMI                &kp N4                   &kp N5            &kp N6           &kp DOT       &none
+&kp RIGHT       &mkp LCLK               &kp PRCNT                &kp N7            &kp N8           &kp N9        &kp N0       &none
+&kp LEFT        &mkp RCLK               &kp ENTER                &none             &none            &none         &none
+&kp ENTER       &kp RIGHT_GUI           &lt_to_layer_0 2 ESCAPE  &lt 1 LANG1       &kp RIGHT_SHIFT
+&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP   &kp PRINTSCREEN  &kp RG(L)     &none        &none
             >;
 
             sensor-bindings =
