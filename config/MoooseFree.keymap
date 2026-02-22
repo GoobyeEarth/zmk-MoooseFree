@@ -16,7 +16,6 @@
 #define NUM 2
 #define AHK 3
 #define FUNCTION 4
-#define FUNCTION2 5
 
 // Japanese
 
@@ -187,7 +186,7 @@
 &none           &kp A                   &kp S                    &kp D            &kp F             &kp G         &kp K_CUT
 &none           &kp Z                   &kp X                    &kp C            &kp V             &kp B         &none        &kp K_REDO
 &none           &none                   &none                    &none            &kp LEFT_GUI      &kp LCTRL     &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
+&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp SPACE        &kp K_COPY
 &bootloader     &none                   &none                    &none            &none             &none         &none        &bt BT_CLR
 &kp UP          &kp Y                   &kp U                    &kp I            &kp O             &kp P         &none
 &kp DOWN        &kp H                   &kp J                    &kp K            &kp L             &kp COLON     &none
@@ -208,7 +207,7 @@
 &none           &kp QMARK               &kp LBKT                 &kp RBKT         &kp LPAR         &kp RPAR   &kp K_CUT
 &none           &kp SEMICOLON           &kp LBRC                 &kp RBRC         &kp LT           &kp GT     &none        &kp K_REDO
 &none           &none                   &none                    &none            &kp LEFT_GUI     &kp LCTRL  &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
+&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp SPACE        &kp K_COPY
 &bootloader     &none                   &none                    &none            &none            &none      &none        &bt BT_CLR
 &kp UP          &kp AMPS                &kp PIPE                 &kp CARET        &kp UNDER        &kp TILDE  &none
 &kp DOWN        &kp LEFT                &kp DOWN                 &kp UP           &kp RIGHT        &kp EQUAL  &none
@@ -229,7 +228,7 @@
 &none           &none                   &none                    &none            &none            &none       &kp K_CUT
 &none           &none                   &none                    &none            &none            &none       &none          &kp K_REDO
 &none           &none                   &none                    &none            &kp LEFT_GUI     &kp LCTRL   &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
+&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp SPACE        &kp K_COPY
 &bootloader     &none                   &none                    &none            &none            &none       &none          &bt BT_CLR
 &kp UP          &none                   &none                    &none            &none            &none       &none
 &kp DOWN        &none                   &none                    &none            &none            &kp DELETE  &none
@@ -250,7 +249,7 @@
 &none           &kp SEMI                &kp N4                   &kp N5           &kp N6           &kp DOT    &kp K_CUT
 &none           &kp PRCNT               &kp N7                   &kp N8           &kp N9           &kp N0     &none        &kp K_REDO
 &none           &none                   &none                    &none            &kp LEFT_GUI     &kp LCTRL  &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
+&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp SPACE        &kp K_COPY
 &bootloader     &none                   &none                    &none            &none            &none      &none        &bt BT_CLR
 &kp UP          &kp AMPS                &kp PIPE                 &kp CARET        &kp UNDER        &kp TILDE  &none
 &kp DOWN        &kp PLUS                &kp MINUS                &kp ASTRK        &kp FSLH         &kp EQUAL  &none
@@ -267,32 +266,11 @@
 
         FUNCTION {
             bindings = <
-&none           &none                   &none                    &none            &none            &none      &kp K_PASTE
-&none           &none                   &none                    &none            &none            &none      &kp K_CUT
-&none           &none                   &none                    &none            &none            &none      &none        &kp K_REDO
-&none           &none                   &none                    &none            &kp LEFT_GUI     &kp LCTRL  &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
-&bootloader     &none                   &none                    &none            &none            &none      &none        &bt BT_CLR
-&kp UP          &none                   &none                    &none            &none            &none      &none
-&kp DOWN        &none                   &none                    &none            &none            &none      &none
-&kp RIGHT       &lt_mkp 4 MCLK          &none                    &none            &none            &none      &none        &none
-&kp LEFT        &mkp LCLK               &mkp RCLK                &none            &none            &none      &none
-&kp ENTER       &kp ENTER               &lt_to_layer_0 2 ESCAPE  &lt 1 LANG1      &kp RIGHT_SHIFT
-&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP  &kp PRINTSCREEN  &kp RG(L)  &none        &none
-            >;
-
-            sensor-bindings =
-                <&mouse_scroll2 SCRL_UP SCRL_DOWN>,
-                <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
-        };
-
-        FUNCTION2 {
-            bindings = <
 &none           &none                   &kp F1                   &kp F2           &kp F3           &kp F4     &kp K_PASTE
 &none           &none                   &kp F5                   &kp F6           &kp F7           &kp F8     &kp K_CUT
 &none           &none                   &kp F9                   &kp F10          &kp F11          &kp F12    &none        &kp K_REDO
 &none           &none                   &none                    &none            &kp LEFT_GUI     &kp LCTRL  &kp K_UNDO
-&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
+&kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 4 TAB     &kp SPACE        &kp K_COPY
 &bootloader     &none                   &none                    &none            &none            &none      &none        &bt BT_CLR
 &kp UP          &kp COLON               &kp N1                   &kp N2           &kp N3           &kp COMMA  &none
 &kp DOWN        &kp SEMI                &kp N4                   &kp N5           &kp N6           &kp DOT    &none
