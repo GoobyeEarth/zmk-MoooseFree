@@ -186,13 +186,13 @@
 &none           &kp Q                   &kp W                    &kp E            &kp R             &kp T         &kp K_PASTE
 &none           &kp A                   &kp S                    &kp D            &kp F             &kp G         &kp K_CUT
 &none           &kp Z                   &kp X                    &kp C            &kp V             &kp B         &none        &kp K_REDO
-&none           &none                   &none                    &none            &kp LEFT_CONTROL  &kp LEFT_ALT  &kp K_UNDO
+&none           &none                   &none                    &none            &kp LEFT_GUI      &kp LCTRL     &kp K_UNDO
 &kp LSHIFT      &lt_to_layer_0 3 LANG2  &lt_to_layer_0 5 TAB     &kp SPACE        &kp K_COPY
 &bootloader     &none                   &none                    &none            &none             &none         &none        &bt BT_CLR
 &kp UP          &kp Y                   &kp U                    &kp I            &kp O             &kp P         &none
 &kp DOWN        &kp H                   &kp J                    &kp K            &kp L             &kp COLON     &none
-&kp RIGHT       &mkp LCLK               &kp N                    &kp M            &kp COMMA         &kp PERIOD    &kp MINUS    &none
-&kp LEFT        &mkp RCLK               &kp RIGHT_GUI            &none            &none             &none         &none
+&kp RIGHT       &lt_mkp 4 MCLK          &kp N                    &kp M            &kp COMMA         &kp PERIOD    &kp MINUS    &none
+&kp LEFT        &mkp LCLK               &mkp RCLK            &none            &none             &none         &none
 &kp ENTER       &kp ENTER               &lt_to_layer_0 2 ESCAPE  &lt 1 LANG1      &kp RIGHT_SHIFT
 &bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP  &kp PRINTSCREEN   &kp RG(L)     &none        &none
             >;
