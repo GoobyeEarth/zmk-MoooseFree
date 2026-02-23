@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
-// #include <behaviors/rgbled_widget.dtsi>
+#include <behaviors/rgbled_widget.dtsi>
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
@@ -13,9 +13,9 @@
 // Leyer
 
 #define ARROW 1
-#define NUM 2
+#define FUNCTION 2
 #define AHK 3
-#define FUNCTION 4
+#define NUM 4
 
 // Japanese
 
@@ -222,20 +222,20 @@
                 <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
         };
 
-        other2 {
+        FUNCTION {
             bindings = <
-&none           &none                   &none                    &none            &none             &none         &kp K_PASTE
-&none           &none                   &none                    &none            &none             &none         &kp K_CUT
-&none           &none                   &none                    &none            &none             &none         &none          &kp K_REDO
-&none           &none                   &none                    &none            &kp LEFT_CONTROL  &kp LEFT_ALT  &kp K_UNDO
+&none           &none                   &kp F1                   &kp F2            &kp F3           &kp F4        &kp K_PASTE
+&none           &none                   &kp F5                   &kp F6            &kp F7           &kp F8        &kp K_CUT
+&none           &none                   &kp F9                   &kp F10           &kp F11          &kp F12       &none        &kp K_REDO
+&none           &none                   &none                    &none             &kp LEFT_CONTROL &kp LEFT_ALT  &kp K_UNDO
 &kp LSHIFT      &lt_to_layer_0 3 LANG2  &kp SPACE                &lt_to_layer_0 4 TAB  &kp K_COPY
-&bootloader     &none                   &none                    &none            &none             &none         &none          &bt BT_CLR
-&kp UP          &none                   &none                    &none            &none             &none         &none
-&kp DOWN        &mkp MCLK               &none                    &none            &none             &kp DELETE    &none
-&kp RIGHT       &mkp RCLK               &none                    &none            &none             &none         &kp BACKSPACE  &none
-&kp LEFT        &mkp LCLK               &kp RIGHT_GUI            &none            &none             &none         &none
-&kp ENTER       &lt_to_layer_0 2 ESCAPE &kp ENTER                &lt 1 LANG1      &kp RIGHT_SHIFT
-&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP  &kp PRINTSCREEN   &kp RG(L)     &none          &none
+&bootloader     &none                   &none                    &none             &none            &none         &none        &bt BT_CLR
+&kp UP          &kp COLON               &kp N1                   &kp N2            &kp N3           &kp COMMA     &none
+&kp DOWN        &kp SEMI                &kp N4                   &kp N5            &kp N6           &kp DOT       &none
+&kp RIGHT       &mkp RCLK               &kp PRCNT                &kp N7            &kp N8           &kp N9        &kp N0       &none
+&kp LEFT        &mkp LCLK               &kp RIGHT_GUI            &none             &none            &none         &none
+&kp ENTER       &lt_to_layer_0 2 ESCAPE &kp ENTER                &lt 1 LANG1       &kp RIGHT_SHIFT
+&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP   &kp PRINTSCREEN  &kp RG(L)     &none        &none
             >;
 
             sensor-bindings =
@@ -264,20 +264,20 @@
                 <&mouse_scroll SCRL_LEFT SCRL_RIGHT>;
         };
 
-        FUNCTION {
+        other2 {
             bindings = <
-&none           &none                   &kp F1                   &kp F2            &kp F3           &kp F4        &kp K_PASTE
-&none           &none                   &kp F5                   &kp F6            &kp F7           &kp F8        &kp K_CUT
-&none           &none                   &kp F9                   &kp F10           &kp F11          &kp F12       &none        &kp K_REDO
-&none           &none                   &none                    &none             &kp LEFT_CONTROL &kp LEFT_ALT  &kp K_UNDO
+&none           &none                   &none                    &none            &none             &none         &kp K_PASTE
+&none           &none                   &none                    &none            &none             &none         &kp K_CUT
+&none           &none                   &none                    &none            &none             &none         &none          &kp K_REDO
+&none           &none                   &none                    &none            &kp LEFT_CONTROL  &kp LEFT_ALT  &kp K_UNDO
 &kp LSHIFT      &lt_to_layer_0 3 LANG2  &kp SPACE                &lt_to_layer_0 4 TAB  &kp K_COPY
-&bootloader     &none                   &none                    &none             &none            &none         &none        &bt BT_CLR
-&kp UP          &kp COLON               &kp N1                   &kp N2            &kp N3           &kp COMMA     &none
-&kp DOWN        &kp SEMI                &kp N4                   &kp N5            &kp N6           &kp DOT       &none
-&kp RIGHT       &mkp RCLK               &kp PRCNT                &kp N7            &kp N8           &kp N9        &kp N0       &none
-&kp LEFT        &mkp LCLK               &kp RIGHT_GUI            &none             &none            &none         &none
-&kp ENTER       &lt_to_layer_0 2 ESCAPE &kp ENTER                &lt 1 LANG1       &kp RIGHT_SHIFT
-&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP   &kp PRINTSCREEN  &kp RG(L)     &none        &none
+&bootloader     &none                   &none                    &none            &none             &none         &none          &bt BT_CLR
+&kp UP          &none                   &none                    &none            &none             &none         &none
+&kp DOWN        &mkp MCLK               &none                    &none            &none             &kp DELETE    &none
+&kp RIGHT       &mkp RCLK               &none                    &none            &none             &none         &kp BACKSPACE  &none
+&kp LEFT        &mkp LCLK               &kp RIGHT_GUI            &none            &none             &none         &none
+&kp ENTER       &lt_to_layer_0 2 ESCAPE &kp ENTER                &lt 1 LANG1      &kp RIGHT_SHIFT
+&bt BT_CLR_ALL  &kp K_MUTE              &kp C_VOLUME_DOWN        &kp C_VOLUME_UP  &kp PRINTSCREEN   &kp RG(L)     &none          &none
             >;
 
             sensor-bindings =
